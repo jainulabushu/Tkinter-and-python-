@@ -1,0 +1,17 @@
+In Tkinter everything is widget, button widgets, text widgets, frame widgets, etc,..
+1st code: just a window named PewDiePie
+
+from tkinter import *
+
+#first thing to make root widget when using tkinter
+root = Tk()
+
+#creating a label
+myLabel = Label(root, text= 'PewDiePie')
+
+myLabel.pack()
+
+#final looping
+root.mainloop()
+
+Output: a window opens with minimize, maximaize and close buttons with we labled name, we can resize this window as we want.
