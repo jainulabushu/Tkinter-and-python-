@@ -65,6 +65,45 @@ mybutton.pack()
 
 root.mainloop()
 
+6. fid size of the button using padx and pady
+
+from tkinter import *
+
+root = Tk()
+
+mybutton = Button(root, text='Press Here!', padx=40, pady=30)
+
+mybutton.pack()
+
+root.mainloop()
+
+7. creating function, python only reads and store it, we are not using our myclick function
+
+from tkinter import *
+
+root = Tk()
+
+def myclick():
+    mylabel = Label(root, text='nothing happend')
+    mylabel.pack()
+
+
+mybutton = Button(root, text='Press Here!')
+
+mybutton.pack()
+
+root.mainloop()
+
+
+
+
+
+
+
+
+
+
+
 
 
 
