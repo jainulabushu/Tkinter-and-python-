@@ -53,7 +53,17 @@ mybutton.pack() # we cannot use pack() and grid() in one object
 
 root.mainloop()
 
+5. creating a button with disabled mode
 
+from tkinter import *
+
+root = Tk()
+
+mybutton = Button(root, text='Press Here!', state=DISABLED) 
+
+mybutton.pack() 
+
+root.mainloop()
 
 
 
