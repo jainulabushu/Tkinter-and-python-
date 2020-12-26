@@ -41,4 +41,22 @@ myLabel2 = Label(root, text='MrBeast').grid(row=1, column=1)
 
 root.mainloop()
 
+4. Creating a button widget
+
+from tkinter import *
+
+root = Tk()
+
+mybutton = Button(root, text='Press Here!')
+
+mybutton.pack() # we cannot use pack() and grid() in one object
+
+root.mainloop()
+
+
+
+
+
+
+
 
