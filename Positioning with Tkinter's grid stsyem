@@ -65,7 +65,7 @@ mybutton.pack()
 
 root.mainloop()
 
-6. fid size of the button using padx and pady
+6. fix size of the button using padx and pady
 
 from tkinter import *
 
