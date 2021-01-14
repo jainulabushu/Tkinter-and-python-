@@ -1,0 +1,16 @@
+1. Choose the color for letters and background using fg and bg 
+
+from tkinter import *
+
+root = Tk()
+
+
+def myclick():
+    mylabel = Label(root, text='nothing happend', fg='red', bg='blue')
+    mylabel.pack()
+
+
+mybutton = Button(root, text='Press Here!', command=myclick, fg='violet', bg="yellow")
+mybutton.pack()
+
+root.mainloop()
