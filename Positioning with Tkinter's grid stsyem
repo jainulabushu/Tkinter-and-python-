@@ -94,6 +94,25 @@ mybutton.pack()
 
 root.mainloop()
 
+8. giving commant to button, while clicking button it will do the work as in command
+
+from tkinter import *
+
+root = Tk()
+
+
+def myclick():
+    mylabel = Label(root, text='nothing happend')
+    mylabel.pack()
+
+
+mybutton = Button(root, text='Press Here!', command=myclick)
+mybutton.pack()
+
+root.mainloop()
+
+
+
 
 
 
