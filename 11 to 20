@@ -107,3 +107,26 @@ mybutton.pack()
 
 root.mainloop()
 
+17. to insert words in the input tab
+
+from tkinter import *
+
+root = Tk()
+
+inputs = Entry(root, width=60, borderwidth=10)
+inputs.pack()
+inputs.get()
+inputs.insert(0, 'email or phone no')
+
+def myclick():
+    mylabel = Label(root, text='hi ' + inputs.get(), width=25, bg='orange')
+    mylabel.pack()
+
+
+mybutton = Button(root, text='type your name', command=myclick, fg='violet', bg="white")
+mybutton.pack()
+
+root.mainloop()
+
+
+
