@@ -67,5 +67,43 @@ mybutton.pack()
 
 root.mainloop()
 
-15. 
+15. using entry widget and get() function
+
+from tkinter import *
+
+root = Tk()
+
+inputs = Entry(root, width=60, borderwidth=10)
+inputs.pack()
+inputs.get()
+
+def myclick():
+    mylabel = Label(root, text=inputs.get(), width=25, bg='orange')
+    mylabel.pack()
+
+
+mybutton = Button(root, text='type your name', command=myclick, fg='violet', bg="white")
+mybutton.pack()
+
+root.mainloop()
+
+16. concontinate sting and function in for lable
+
+from tkinter import *
+
+root = Tk()
+
+inputs = Entry(root, width=60, borderwidth=10)
+inputs.pack()
+inputs.get()
+
+def myclick():
+    mylabel = Label(root, text='hi ' + inputs.get(), width=25, bg='orange')
+    mylabel.pack()
+
+
+mybutton = Button(root, text='type your name', command=myclick, fg='violet', bg="white")
+mybutton.pack()
+
+root.mainloop()
 
