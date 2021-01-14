@@ -129,7 +129,23 @@ mybutton.pack()
 
 root.mainloop()
 
-10. 
+10. Choose the color of the button using fg =
+
+from tkinter import *
+
+root = Tk()
+
+
+def myclick():
+    mylabel = Label(root, text='nothing happend')
+    mylabel.pack()
+
+
+mybutton = Button(root, text='Press Here!', command=myclick, fg='violet')
+mybutton.pack()
+
+root.mainloop()
+
 
 
 
