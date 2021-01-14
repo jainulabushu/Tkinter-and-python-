@@ -1,4 +1,4 @@
-1. Choose the color for letters and background using fg and bg 
+11. Choose the color for letters and background using fg and bg 
 
 from tkinter import *
 
@@ -14,3 +14,58 @@ mybutton = Button(root, text='Press Here!', command=myclick, fg='violet', bg="ye
 mybutton.pack()
 
 root.mainloop()
+
+12. creating input fields using Entry widget
+
+from tkinter import *
+
+root = Tk()
+
+inputs = Entry(root)
+inputs.pack()
+
+mybutton = Button(root, text='Press Here!', command='how u doing?', fg='violet', bg="white")
+mybutton.pack()
+
+root.mainloop()
+
+13. we can use width for some widgets
+
+from tkinter import *
+
+root = Tk()
+
+inputs = Entry(root, width=60)
+inputs.pack()
+
+def myclick():
+    mylabel = Label(root, text='nothing happend', width=25, bg='orange')
+    mylabel.pack()
+
+
+mybutton = Button(root, text='Press Here!', command=myclick, fg='violet', bg="white", width=30)
+mybutton.pack()
+
+root.mainloop()
+
+14. we can use borderwidth too
+
+from tkinter import *
+
+root = Tk()
+
+inputs = Entry(root, width=60, borderwidth=10)
+inputs.pack()
+
+def myclick():
+    mylabel = Label(root, text='nothing happend', width=25, bg='orange')
+    mylabel.pack()
+
+
+mybutton = Button(root, text='Press Here!', command=myclick, fg='violet', bg="white")
+mybutton.pack()
+
+root.mainloop()
+
+15. 
+
