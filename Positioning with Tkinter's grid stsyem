@@ -111,6 +111,28 @@ mybutton.pack()
 
 root.mainloop()
 
+9. use function in command without pranthesis
+
+from tkinter import *
+
+root = Tk()
+
+
+def myclick():
+    mylabel = Label(root, text='nothing happend')
+    mylabel.pack()
+
+
+mybutton = Button(root, text='Press Here!', command=myclick())  #dont call a function with pranthesis because it
+                                                                #the function runs and comment will not gonna work
+mybutton.pack()
+
+root.mainloop()
+
+10. 
+
+
+
 
 
 
