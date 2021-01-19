@@ -1,1 +1,9 @@
+#to create icon
 
+from tkinter import *
+
+root = Tk()
+root.title('Start learning tkinter')
+root.iconbitmap('ic.ico')            #icon file must be in ico format
+
+root.mainloop()
