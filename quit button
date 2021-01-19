@@ -1,0 +1,10 @@
+from tkinter import *
+
+root = Tk()
+root.title('Start learning tkinter')
+root.iconbitmap('ic.ico')
+
+button_quit = Button(root, text='C u later', command=root.quit)
+button_quit.pack()
+
+root.mainloop()
