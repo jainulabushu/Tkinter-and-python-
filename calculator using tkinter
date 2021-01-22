@@ -17,34 +17,34 @@ def button_clear():
 
 
 def button_add():
-    global first_name
+    global first_num
     global math
     math = 'add'
-    first_name = int(e.get())
+    first_num = int(e.get())
     e.delete(0, END)
 
 
 def button_sub():
-    global first_name
+    global first_num
     global math
     math = 'sub'
-    first_name = int(e.get())
+    first_num = int(e.get())
     e.delete(0, END)
 
 
 def button_multiply():
-    global first_name
+    global first_num
     global math
     math = 'multiply'
-    first_name = int(e.get())
+    first_num = int(e.get())
     e.delete(0, END)
 
 
 def button_divide():
-    global first_name
+    global first_num
     global math
     math = 'divide'
-    first_name = int(e.get())
+    first_num = int(e.get())
     e.delete(0, END)
 
 
@@ -52,13 +52,13 @@ def button_equals():
     second_num = int(e.get())
     e.delete(0, END)
     if math == 'add':
-        e.insert(0,  first_name + second_num)
+        e.insert(0,  first_num + second_num)
     if math == 'sub':
-        e.insert(0,  first_name - second_num)
+        e.insert(0,  first_num - second_num)
     if math == 'multiply':
-        e.insert(0,  first_name * second_num)
+        e.insert(0,  first_num * second_num)
     if math == 'divide':
-        e.insert(0,  first_name / second_num)
+        e.insert(0,  first_num / second_num)
 
 
 
