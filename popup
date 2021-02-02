@@ -1,0 +1,17 @@
+from tkinter import *
+from PIL import ImageTk, Image
+from tkinter import messagebox
+
+root = Tk()
+root.title('learn tkinter')
+root.iconbitmap('ic.ico')
+
+
+def popup():
+    messagebox.showinfo('this is popup!', 'hello world')
+
+
+Button(root, text='popup', command=popup).pack()
+
+root.mainloop()
+
