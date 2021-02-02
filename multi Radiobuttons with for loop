@@ -1,0 +1,29 @@
+from tkinter import *
+from PIL import ImageTk, Image
+
+root = Tk()
+root.title('learn tkinter')
+root.iconbitmap('ic.ico')
+
+Flavours = [
+    ("Chocolate", "Choco"),
+    ("Strawberry", "berry"),
+    ("Vennila", "nila"),
+    ("Nuts", "Nut")
+]
+
+iceCreams = StringVar()
+iceCreams.set('Chocolate')
+
+for text, mode in Flavours:
+    Radiobutton(root, text=text, variable=iceCreams, value=mode).pack(anchor=W) #anchor=W FOR left align
+
+
+def clicked(value):
+    my_label = Label(root, text=value).pack()
+
+
+myButton = Button(root, text='press here!', command=lambda: clicked(iceCreams.get())).pack()
+
+root.mainloop()
+
