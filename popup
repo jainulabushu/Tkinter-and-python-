@@ -6,6 +6,8 @@ root = Tk()
 root.title('learn tkinter')
 root.iconbitmap('ic.ico')
 
+#showinfo, showwarning, showerror, askquestion, askokcancel, askyesno
+
 
 def popup():
     messagebox.showinfo('this is popup!', 'hello world')
