@@ -1,0 +1,24 @@
+from tkinter import *
+from PIL import ImageTk, Image
+from tkinter import messagebox
+
+root = Tk()
+root.title('learn tkinter')
+root.iconbitmap('ic.ico')
+
+#showinfo, showwarning, showerror, askquestion, askokcancel, askyesno
+
+
+def popup():
+    response = messagebox.askyesno('this is popup!', 'hello world')
+    Label(root, text=response)
+    if response == 1:
+        Label(root, text='you clicked Yes').pack()
+    else:
+        Label(root, text='you clicked No').pack()
+
+
+Button(root, text='popup', command=popup).pack()
+
+root.mainloop()
+
