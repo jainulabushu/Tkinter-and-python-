@@ -1,0 +1,13 @@
+from tkinter import *
+from PIL import ImageTk, Image
+
+root = Tk()
+root.title('learn tkinter')
+root.iconbitmap('ic.ico')
+
+frame = LabelFrame(root, text="It's a frame.", padx=5, pady=5)
+frame.pack(padx=10, pady=10)
+
+myButton = Button(frame, text="Don't press here!").pack()
+
+root.mainloop()
