@@ -11,7 +11,7 @@ root.iconbitmap('ic.ico')
 
 def popup():
     response = messagebox.askyesno('this is popup!', 'hello world')
-    Label(root, text=response)
+    #Label(root, text=response).pack()
     if response == 1:
         Label(root, text='you clicked Yes').pack()
     else:
