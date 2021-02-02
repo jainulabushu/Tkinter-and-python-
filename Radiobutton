@@ -1,0 +1,14 @@
+from tkinter import *
+from PIL import ImageTk, Image
+
+root = Tk()
+root.title('learn tkinter')
+root.iconbitmap('ic.ico')
+
+r = IntVar()
+
+Radiobutton(root, text='Choice 1', variable=r, value=1).pack()
+Radiobutton(root, text='Choice 2', variable=r, value=2).pack()
+
+root.mainloop()
+
