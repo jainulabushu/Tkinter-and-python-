@@ -50,5 +50,32 @@ btn = Button(root, text='open second window', command=opend).pack()
 
 root.mainloop()
 
+4. adding button to top window for destroy command
+
+from tkinter import *
+from PIL import ImageTk, Image
+
+root = Tk()
+root.title('learn tkinter')
+root.iconbitmap('ic.ico')
+
+
+def opend():
+    global my_img
+    top = Toplevel()
+    top.title('second window')
+    top.iconbitmap('ic.ico')
+    my_img = ImageTk.PhotoImage(Image.open('png files/danush.png'))
+    my_label = Label(top, image=my_img).pack()
+    btn2 = Button(top, text='clode second window', command=top.destroy).pack()
+
+
+btn = Button(root, text='open second window', command=opend).pack()
+
+
+root.mainloop()
+
+
+
 
 
