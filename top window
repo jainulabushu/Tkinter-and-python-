@@ -27,4 +27,28 @@ my_label = Label(top, image=my_img).pack()
 
 root.mainloop()
 
+3. Creating button to open top window
+
+from tkinter import *
+from PIL import ImageTk, Image
+
+root = Tk()
+root.title('learn tkinter')
+root.iconbitmap('ic.ico')
+
+
+def opend():
+    global my_img
+    top = Toplevel()
+    top.title('second window')
+    top.iconbitmap('ic.ico')
+    my_img = ImageTk.PhotoImage(Image.open('png files/danush.png'))
+    my_label = Label(top, image=my_img).pack()
+
+
+btn = Button(root, text='open second window', command=opend).pack()
+
+root.mainloop()
+
+
 
