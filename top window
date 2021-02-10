@@ -11,3 +11,20 @@ labl = Label(top, text='Hello world').pack()
 
 root.mainloop()
 
+
+2. adding image in label and label in top window
+
+from tkinter import *
+from PIL import ImageTk, Image
+
+root = Tk()
+root.title('learn tkinter')
+root.iconbitmap('ic.ico')
+
+top = Toplevel()
+my_img = ImageTk.PhotoImage(Image.open('png files/danush.png'))
+my_label = Label(top, image=my_img).pack()
+
+root.mainloop()
+
+
