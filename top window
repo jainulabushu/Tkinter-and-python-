@@ -1,0 +1,13 @@
+from tkinter import *
+from PIL import ImageTk, Image
+
+root = Tk()
+root.title('learn tkinter')
+root.iconbitmap('ic.ico')
+
+top = Toplevel()
+
+labl = Label(top, text='Hello world').pack()
+
+root.mainloop()
+
