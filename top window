@@ -1,3 +1,5 @@
+1. Creating top window
+
 from tkinter import *
 from PIL import ImageTk, Image
 
